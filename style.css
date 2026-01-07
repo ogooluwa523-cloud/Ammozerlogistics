@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #1f2937;
+}
+
+/* EDIT COMPANY DETAILS HERE */
+/* Company name, phone, and email are written directly in HTML below */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.btn {
+    background: #facc15;
+    color: #1e3a8a;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.hero {
+    background: #1e3a8a;
+    color: white;
+    padding: 56px 16px;
+    text-align: center;
+    animation: fadeUp 0.6s ease-out;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.hero p {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #dbeafe;
+}
+
+.hero-actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.hero-actions .outline {
+    background: white;
+    color: #1e3a8a;
+}
+
+section {
+    padding: 40px 16px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    padding: 16px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.why {
+    background: white;
+}
+
+.why-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    margin-bottom: 12px;
+}
+
+.cta {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.cta p {
+    color: #dbeafe;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contact div {
+    margin-top: 6px;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+
+    /* FOOTER STYLES */
+    footer {
+        background: #1e3a8a;
+        color: white;
+        padding: 32px 16px;
+        margin-bottom: 50px;
+        /* Space for mobile nav */
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .footer-col h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        color: #facc15;
+    }
+
+    .footer-col ul {
+        list-style: none;
+    }
+
+    .footer-col li {
+        margin-bottom: 8px;
+    }
+
+    .footer-col a {
+        color: #dbeafe;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .footer-col a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 32px;
+        padding-top: 16px;
+        border-top: 1px solid #3b82f6;
+        font-size: 12px;
+        color: #93c5fd;
+    }
