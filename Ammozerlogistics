@@ -1,0 +1,4 @@
+cd "C:\Users\Yeager Sojiro\.gemini\antigravity\scratch\AmmozerLogistics"
+git remote add origin https://github.com/ogooluwa523-cloud/AmmozerLogistics.git
+git branch -M main
+git push -u origin main
